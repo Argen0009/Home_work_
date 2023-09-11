@@ -2,8 +2,8 @@ public class Dog extends Animal{
     private String team;
     private int YearOfBirth;
 
-    public Dog(String name, int Age,Color color, int yearOfBirth, String team) {
-        super(name, Age,color);
+    public Dog(String name, int Age , int yearOfBirth, String team) {
+        super(name, Age);
         this.YearOfBirth = yearOfBirth;
         this.team = team;
 
@@ -19,8 +19,6 @@ public class Dog extends Animal{
 
     @Override
     public void print() {
-        System.out.println("Team"+ team +
-                "\nColor: "+ Color.ORANGE+
-                "\nYear of birth: "+YearOfBirth);
+        System.out.println(" Dog:"+getName()+" Age:"+getAge()+" YearOfBirth:"+ getYearOfBirth()+" Team:"+getTeam());
     }
 }

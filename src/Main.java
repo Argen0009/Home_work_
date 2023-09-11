@@ -15,11 +15,11 @@ public class Main {
     public static Printable createObject (String className) {
         switch (className) {
             case "Dog":
-                return new Dog("Bady",6,Color.ORANGE,2017,"voice");
+                return new Dog("Bady",6,2017,"voice");
             case "Tiger":
-                return new Tiger("Bob",12,Color.WHITE,425.15,"Africa");
+                return new Tiger("Bob",12,425.15,"Africa");
             case "Cat":
-                return new Cat("Alisa",2,Color.BLACK,"Sccottish fold cat");
+                return new Cat("Alisa",2,"Sccottish fold cat");
             default:
             throw new IllegalArgumentException("Unknown class: " + className);
         }

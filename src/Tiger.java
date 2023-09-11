@@ -2,8 +2,8 @@ public class Tiger extends Animal {
     private String WhereWasBorn;
     private double whole;
 
-    public Tiger(String name, int Age,Color color, double whole, String whereWasBorn) {
-        super(name, Age,color);
+    public Tiger(String name, int Age, double whole, String whereWasBorn) {
+        super(name, Age);
         this.whole = whole;
         WhereWasBorn = whereWasBorn;
     }
@@ -18,9 +18,8 @@ public class Tiger extends Animal {
 
     @Override
     public void print() {
-        System.out.println("Where was born: " +WhereWasBorn+
-                "\nColor: " + Color.WHITE+
-                  "\nIt's weight is"+whole);
+        System.out.println(" Tiger:"+getName() +" Age:"+getAge() +" Where was born:" +getWhereWasBorn()+
+                  "It's weight is :"+getWhole());
     }
 }
 
